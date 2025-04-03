@@ -16,12 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/orange"
-            app:popupTheme="@style/Theme.QuickStock.PopupOverlay" />
+            app:popupTheme="@style/Theme.QuickStock.PopupOverlay"
+            app:titleTextColor="@android:color/transparent"
+            app:subtitleTextColor="@android:color/transparent"
+            app:title=" "/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main" />
 
+    <!-- Elimino el botón flotante
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -30,5 +34,5 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
         app:srcCompat="@android:drawable/ic_dialog_email" />
-
+    -->
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

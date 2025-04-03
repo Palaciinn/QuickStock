@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para ingresar el nombre del producto a buscar -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Buscar producto"
+        android:textSize="18sp"
+        android:layout_marginTop="90dp"/>
+
+    <!-- Botón para iniciar la búsqueda -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded10_orange"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Buscar"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!-- Lista para mostrar los productos encontrados -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular" />
+</LinearLayout>
